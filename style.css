@@ -1,0 +1,102 @@
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Raleway Dots', cursive;
+font-family: "Kaushan Script", cursive;
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 3rem;
+  max-width: 1600px;
+  margin: 0;
+}
+
+/* ----- Header ----- */
+.my-header {
+  height: 100vh;
+  width: 100vw;
+  background: #e83d47;
+  color: white;
+  overflow: hidden;
+  background: -webkit-linear-gradient(
+      rgba(232, 61, 71, 0.9),
+      rgba(232, 61, 71, 0.9)
+    ),
+    url("images/petra_pavlisova.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 20px;
+}
+
+/* ----- Navigation ----- */
+.my-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-logo {
+  font-family: "Kaushan Script", cursive;
+  font-size: 3rem;
+  color: white;
+}
+
+.main-menu ul {
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+.main-menu li {
+  padding: 0 0.5rem;
+  padding: 0px 20px;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ----- Intro ----- */
+.intro {
+  padding: 70px 50px;
+}
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 4rem;
+  line-height: 5.2rem;
+}
+
+button {
+  background-color: #e83d4800;
+  border: solid white 3px;
+  color: white;
+  margin: 25px 8px;
+  padding: 5px 20px;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ----- Content ----- */
+
+h3 {
+  text-transform: uppercase;
+}
