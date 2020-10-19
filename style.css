@@ -12,6 +12,7 @@ font-family: "Kaushan Script", cursive;
 
 red: #e83d47
 white-grey: #fafafa
+linkedin: #0966C2
 
 box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 */
@@ -152,6 +153,37 @@ header {
   text-align: center;
 }
 
+.phone {
+  color: #fff;
+}
+
+.phone:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.btn-linkedin {
+  display: block;
+  margin: auto;
+  background-color: #0966c2;
+  border-color: #0966c2;
+  border-radius: 0.3rem;
+  padding: 8px 20px 4px 18px;
+}
+
+.btn-linkedin a {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.btn-linkedin:hover {
+  background-color: #0b77e2;
+}
+
+.
+
 /* ----- TABLET and wider screens ----- */
 @media (min-width: 768px) {
   .nav-link {
@@ -223,21 +255,21 @@ header {
       transform: translate(1px, -2px) rotate(-1deg);
     }
   }
+}
 
-  /* ----- PC and wider screens ----- */
-  @media (min-width: 992px) {
-    body {
-      max-width: 1600px;
-    }
+/* ----- PC and wider screens ----- */
+@media (min-width: 992px) {
+  body {
+    max-width: 1600px;
+  }
 
-    /* ----- Typography ----- */
-    h1 {
-      font-size: 400%;
-      line-height: 6rem;
-    }
+  /* ----- Typography ----- */
+  h1 {
+    font-size: 400%;
+    line-height: 6rem;
+  }
 
-    .intro button {
-      font-size: 130%;
-    }
+  .intro button {
+    font-size: 130%;
   }
 }
