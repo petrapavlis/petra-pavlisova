@@ -182,8 +182,6 @@ header {
   background-color: #0b77e2;
 }
 
-.
-
 /* ----- TABLET and wider screens ----- */
 @media (min-width: 768px) {
   .nav-link {
