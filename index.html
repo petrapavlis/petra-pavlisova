@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <title>Petra Pavlisová</title>
     <meta name="author" content="Petra Pavlisová" />
-
-    <title>Petra Pavlisová - Junior coder - Junior frontend developer</title>
+    <meta
+      name="description"
+      content="Junior coder - Junior frontend developer - Personal site"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -19,7 +23,7 @@
       crossorigin="anonymous"
     />
 
-    <!-- CSS styly -->
+    <!-- moje CSS styly -->
     <link rel="stylesheet" href="style.css" />
 
     <!-- Google Font: Roboto, Roboto Slab -->
@@ -36,72 +40,252 @@
   </head>
 
   <body>
-    <!-- Main menu and Intro -->
-    <header class="my-header">
-      <nav class="my-nav">
-        <div class="my-logo">&lt;pp&gt;</div>
-        <div class="main-menu">
-          <ul>
-            <li><a href="#omne">Taková šikovná cérečka</a></li>
-            <li>
-              <a href="https://www.linkedin.com/in/petra-pavlis/">LinkedIn</a>
+    <header>
+      <nav class="navbar navbar-expand-md">
+        <!-- Top navigation logo -->
+        <a class="navbar-brand" href="index.html">
+          <div class="pp-logo">&lt;pp&gt;</div></a
+        >
+        <!-- Top navigation mobile toggler -->
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#mojeNavigace"
+          aria-controls="mojeNavigace"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Top navigation main menu -->
+        <div class="collapse navbar-collapse main-menu" id="mojeNavigace">
+          <ul class="navbar-nav ml-auto mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                >Úvod<span class="sr-only">(current)</span></a
+              >
             </li>
-            <li><a href="https://github.com/petrapavlis">GitHub</a></li>
-            <li><a href="#kontakt">Contact</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projekty">Projekty</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#omne">O mně</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.linkedin.com/in/petra-pavlis/"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/petrapavlis"
+                >GitHub</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontakt">Kontakt</a>
+            </li>
           </ul>
         </div>
       </nav>
 
+      <!-- Intro -->
       <section class="intro">
-        <h1>
-          Jsem <strong>Petra Pavlisová</strong><br />
-          Vo co tady go?<br />
-          Chci se stát <strong>kodérkou</strong><br />
-          Tohle je moje wondersite!
-        </h1>
-        <button>Čekni mě</button>
+        <div class="container py-5">
+          <h1>
+            Jsem <strong>Petra Pavlisová</strong><br />
+            a chci si najít práci jako
+            <strong>kodér<span class="koderka">(ka)</span></strong>
+          </h1>
+          <button class="btn my-3 py-3 px-4 my-md-4 my-lg-5">
+            <a href="#projekty">Čekni mě</a>
+          </button>
+        </div>
       </section>
     </header>
 
     <main>
-      <section class="main-text">
-        <h2>Jak to začalo</h2>
-        <p>
-          Byla jsem takhle na rodičovské a měla pocit, že totálně zblbnu.
-          Jednoho dne přišla kámoška, že potřebuje stránky kosmetického salonu a
-          já se to začala učit.
-        </p>
-      </section>
+      <section>
+        <div class="container pb-5">
+          <!-- Vo co tady go? aneb moje projekty -->
+          <div class="row pt-5 my-md-5">
+            <div class="col-md-6">
+              <h2>Vo co tady go?</h2>
+              <p>
+                Když jsem měla na rodičovské pocit, že se z dětí dočista
+                zblázním, začala jsem se učit Wordpress. Jednou za mnou přišla
+                kámoška, která zrovna otvírala kosmetický salon, jestli bych jí
+                udělala web. Začala jsem na tom dělat a vznikly wordpressové
+                stránky
+                <a
+                  class="link"
+                  href="https://www.castlecosmetic.cz/"
+                  target="_blank"
+                  >Castle Cosmetic.</a
+                >
+              </p>
+            </div>
 
-      <section class="main-text">
-        <h2>A co bylo dál?</h2>
-        <p>
-          Po strastiplných samostatných pokusech jsem se přihlásila na
-          tříměsíční Digitální Akademii Web v Czechitas. No, řeknu vám, nebylo
-          to snadný.
-        </p>
-      </section>
+            <div class="col-md-6 pt-3 pt-md-0 shaker">
+              <a
+                class="link"
+                href="https://www.castlecosmetic.cz/"
+                target="_blank"
+                ><img
+                  class="img-fluid projects"
+                  src="images/web_castle_cosmetic.png"
+                  alt="Web Castle Cosmetic"
+              /></a>
+            </div>
+          </div>
 
-      <section class="main-text">
-        <h2>Tady a teď</h2>
-        <p>
-          Takovej JavaScript se pořád snažím pochopit doteď - možná marně, ale
-          věřím, že to zvládnu. Já to nevzdám a ono to jednou přijde. Poslední
-          se budu smát já :-)
-        </p>
+          <!-- Co bylo dál... -->
+          <div class="row pt-5 my-md-5">
+            <div class="col-md-6">
+              <h2>Co bylo dál...</h2>
+              <p>
+                Pak přišla další kámoška. Ta má pro změnu lyžařskou školu ve
+                Vrchlabí a jejich web už byl tak stařičký a nepodporovaný, že
+                jim přestal fungovat. Udělala jsem další web na Wordpressu
+                <a
+                  class="link"
+                  href="https://www.snowschool.cz/"
+                  target="_blank"
+                  >Snowschool.</a
+                >
+                Na webu nadále pracuju, edituju, vychytávám mouchy a vylepšuju.
+              </p>
+            </div>
+
+            <div class="col-md-6 pt-3 pt-md-0 order-md-first shaker">
+              <a class="link" href="https://www.snowschool.cz/" target="_blank"
+                ><img
+                  class="img-fluid projects"
+                  src="images/web_snowschool.png"
+                  alt="Web Snowschool.cz"
+              /></a>
+            </div>
+          </div>
+
+          <!-- Čas na osobní projekt -->
+          <div class="row pt-5 my-md-5">
+            <div class="col-md-6">
+              <h2>Čas na osobní projekt</h2>
+              <p>
+                Jsem v pacientském spolku lidí s narkolepsií, a protože je tahle
+                nemoc celkem nepochopená, dala jsem dohromady web
+                <a class="link" href="https://www.usinam.cz/" target="_blank"
+                  >Usínám</a
+                >
+                o narkolepsii. Kovářova kobyla chodí bosa, takže úplně nestíhám
+                pravidelně přispívat, ale díky webu už vznikla poměrně početná
+                komunita lidí, kterým pomohl.
+              </p>
+            </div>
+
+            <div class="col-md-6 pt-3 pt-md-0 shaker">
+              <a class="link" href="https://www.usinam.cz/" target="_blank"
+                ><img
+                  class="img-fluid projects"
+                  src="images/web_usinam.png"
+                  alt="Web Usínám.cz"
+              /></a>
+            </div>
+          </div>
+
+          <!-- Czechitas -->
+          <div class="row pt-5 my-md-5">
+            <div class="col-md-6">
+              <h2>Czechitas</h2>
+              <p>
+                Pak jsem objevila kurzy v Czechitas. Začala jsem úvodem do HTML
+                a CSS a pokračovala tříměsíční Digitální Akademií zaměřenou na
+                front-end webový vývoj. No, nebylo to snadný a JavaScript se
+                snažím pochopit doteď, ale vznikl závěrečný projekt -
+                <a
+                  class="link"
+                  href="https://narkolepsie.usinam.cz/"
+                  target="_blank"
+                  >stránka na sebediagnostiku narkolepsie.</a
+                >
+              </p>
+            </div>
+
+            <div class="col-md-6 pt-3 pt-md-0 order-md-first shaker">
+              <a
+                class="link"
+                href="https://narkolepsie.usinam.cz/"
+                target="_blank"
+                ><img
+                  class="img-fluid projects"
+                  src="images/web_narkolepsie.png"
+                  alt="Web Narkolepsie Usínám"
+              /></a>
+            </div>
+          </div>
+
+          <!-- Tady a teď -->
+          <div class="row pt-5 my-md-5">
+            <div class="col-md-6">
+              <h2>Tady a teď</h2>
+              <p>
+                Momentálně dávám dohromady
+                <a
+                  class="link"
+                  href="https://petrapavlis.github.io/winter-apartment/"
+                  target="_blank"
+                  >stránku apartmánu ve Vrchlabí.</a
+                >
+                Jo, je to zas pro tu kámošku s lyžařskou školou. Web je zatím v
+                poločase rozpadu, ale snažím se to po kouskách posouvat dál.
+                Věci jako koronavirus, karanténa a megazlobící děti mi to trochu
+                kazí.
+              </p>
+            </div>
+
+            <div class="col-md-6 pt-3 pt-md-0 shaker align-middle">
+              <a
+                class="link"
+                href="https://petrapavlis.github.io/winter-apartment/"
+                target="_blank"
+                ><img
+                  class="img-fluid projects"
+                  src="images/web_winter_apartment.png"
+                  alt="Web Winter Apartment"
+              /></a>
+            </div>
+          </div>
+
+          <!-- Kdo jsem -->
+          <div class="row pt-5 my-md-5 justify-content-center">
+            <div class="col-md-8">
+              <h2>Kdo jsem?</h2>
+              <p>
+                Magor, který nemá problém dělat si ze sebe srandu. Nervák, který
+                jednou dostane infarkt. Unavená matka dvou divokých dětí, bez
+                dávky mateřského talentu. Kdyby to ještě nebylo úplně jasný,
+                <strong>ráda bych si našla práci jako juniorní kodér</strong>
+                a naučila se zase něco víc, protože mě to dost baví.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="my-footer">
-      <section class="footer-text">
-        <h2>Sejdeme se na kafe a probereme víc?</h2>
-        <p>Aktualizace říjen 2020</p>
-        <div class="my-logo">&lt;pp&gt;</div>
-      </section>
+    <footer class="my-footer py-5">
+      <p>Dáme kafe a probereme víc?</p>
+      <p>Aktualizace říjen 2020</p>
+      <div class="pp-logo">&lt;pp&gt;</div>
     </footer>
 
     <!-- Optional JavaScript -->
+    <script src="index.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

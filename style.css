@@ -1,7 +1,19 @@
 /* 
+Bootstrap 4 breakpointy: 576px, 768px, 992px, 1200px
+xs: (max-width: 575px)
+sm: (min-width: 576px) and (max-width: 767px)
+md: (min-width: 768px) and (max-width: 991px)
+lg: (min-width: 992px) and (max-width: 1199px)
+xl: (min-width: 1200px)
+
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Slab', serif;
 font-family: "Kaushan Script", cursive;
+
+red: #e83d47
+white-grey: #fafafa
+
+box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 */
 
 html {
@@ -16,18 +28,30 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  color: #212121;
   font-size: 1.2rem;
+  line-height: 2.3rem;
+  display: block;
+  margin: auto;
+}
+
+/* ----- Typography ----- */
+h1 {
+  font-family: "Roboto Slab", serif;
+  line-height: 3.5rem;
+}
+
+h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  color: #e83d47;
   line-height: 3rem;
-  max-width: 1600px;
-  margin: 0;
 }
 
 /* ----- Header ----- */
-.my-header {
-  height: 100vh;
-  width: 100vw;
-  background: #e83d47;
-  color: white;
+header {
+  background-color: #e83d47;
+  color: #fff;
   overflow: hidden;
   background: -webkit-linear-gradient(
       rgba(232, 61, 71, 0.9),
@@ -37,104 +61,162 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10px 20px;
 }
 
-/* ----- Navigation ----- */
-.my-nav {
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-}
-
-.my-logo {
+/* ----- Top navigation logo ----- */
+.pp-logo {
   font-family: "Kaushan Script", cursive;
   font-size: 3rem;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
-.main-menu ul {
+/* ----- Top navigation mobile toggler ----- */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #fff;
   margin: 0;
-  display: flex;
-  list-style: none;
 }
 
-.main-menu li {
-  padding: 0px 20px;
-}
-
-.main-menu a {
+/* ----- Top navigation main menu ----- */
+.nav-link {
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
   text-decoration: none;
-  color: white;
-  padding-bottom: 10px;
+  background: linear-gradient(currentColor, currentColor) bottom / 0 0.3em
+    no-repeat;
+  transition: 1s background-size;
 }
 
-.main-menu a:hover {
-  border-bottom: solid white 3px;
+.nav-link:hover {
+  color: rgb(255, 255, 255);
+  background-size: 25% 0.2em;
 }
 
 /* ----- Intro ----- */
-.intro {
-  padding: 70px 50px;
-}
-h1 {
-  font-family: "Roboto Slab", serif;
-  font-size: 4rem;
-  line-height: 5.2rem;
+.koderka {
+  text-decoration: underline;
 }
 
-button {
+.intro button {
   background-color: #e83d4800;
-  border: solid white 3px;
-  color: white;
-  margin: 25px 8px;
-  padding: 5px 20px;
+  border: #fff solid 2px;
   letter-spacing: 0.2rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-button:hover {
+.intro button:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* ----- Main ----- */
-main {
-  font-family: "Roboto", sans-serif;
-  color: black;
+.intro button a {
+  color: #fff;
+  text-decoration: none;
 }
 
-main h2 {
-  font-family: "Roboto Slab", serif;
-  font-weight: bold;
+/* ----- Vo co tady go? aneb moje projekty ----- */
+.projects {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.link {
   color: #e83d47;
+  text-decoration: underline;
 }
 
-main section {
-  max-width: 50%;
-  padding: 75px;
+.link:hover {
+  color: #e83d48bb;
 }
 
 /* ----- Footer ----- */
 .my-footer {
-  font-family: "Roboto Slab", serif;
-  text-align: center;
-  height: 70vh;
-  width: 100vw;
   background: #e83d47;
-  color: white;
-  overflow: hidden;
-  background: -webkit-linear-gradient(
-      rgba(232, 61, 71, 0.9),
-      rgba(232, 61, 71, 0.9)
-    ),
-    url("images/petra_pavlisova_footer.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 140px;
+  font-family: "Roboto Slab", serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 
-.my-footer h2 {
-  padding-bottom: 20px;
+/* ----- TABLET and wider screens ----- */
+@media (min-width: 768px) {
+  /* ----- Typography ----- */
+  h1 {
+    font-size: 300%;
+    line-height: 5rem;
+  }
+
+  .intro button {
+    font-size: 110%;
+  }
+
+  .shaker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shaker:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+
+  /* ----- PC and wider screens ----- */
+  @media (min-width: 992px) {
+    body {
+      max-width: 1600px;
+    }
+
+    /* ----- Typography ----- */
+    h1 {
+      font-size: 400%;
+      line-height: 6rem;
+    }
+
+    .intro button {
+      font-size: 130%;
+    }
+  }
 }
