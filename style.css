@@ -5,15 +5,12 @@ sm: (min-width: 576px) and (max-width: 767px)
 md: (min-width: 768px) and (max-width: 991px)
 lg: (min-width: 992px) and (max-width: 1199px)
 xl: (min-width: 1200px)
-
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Slab', serif;
 font-family: "Kaushan Script", cursive;
-
 red: #e83d47
 white-grey: #fafafa
 linkedin: #0966C2
-
 box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 */
 
@@ -100,7 +97,7 @@ header {
 
 .intro button {
   background-color: #e83d4800;
-  border: #fff solid 2px;
+  border: #fff solid 3px;
   letter-spacing: 0.2rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -130,7 +127,7 @@ header {
 }
 
 .omne button {
-  border: #e83d47 solid 2px;
+  border: #e83d47 solid 3px;
   letter-spacing: 0.2rem;
   font-weight: bold;
   text-transform: uppercase;
