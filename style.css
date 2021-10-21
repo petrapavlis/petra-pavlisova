@@ -1,270 +1,237 @@
-/* 
-Bootstrap 4 breakpointy: 576px, 768px, 992px, 1200px
-xs: (max-width: 575px)
-sm: (min-width: 576px) and (max-width: 767px)
-md: (min-width: 768px) and (max-width: 991px)
-lg: (min-width: 992px) and (max-width: 1199px)
-xl: (min-width: 1200px)
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Slab', serif;
-font-family: "Kaushan Script", cursive;
-red: #e83d47
-white-grey: #fafafa
-linkedin: #0966C2
-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+/*
+color-blue: #0a1d35
+color-red: #e83d47
 */
 
-html {
-  box-sizing: border-box;
-}
-
-*,
-:after,
-:before {
-  box-sizing: inherit;
+body, html {
+    display: block;
+    height: 100%;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  color: #212121;
-  font-size: 1.2rem;
-  line-height: 2.3rem;
-  display: block;
-  margin: auto;
+    font-family: "Roboto", sans-serif;
+    color: #212121;
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+    display: block;
+    margin: auto;
+    max-width: 1600px;
 }
 
-/* ----- Typography ----- */
-h1 {
-  font-family: "Roboto Slab", serif;
-  line-height: 3.5rem;
-}
-
-h2 {
-  font-family: "Roboto Slab", serif;
-  font-weight: bold;
-  color: #e83d47;
-  line-height: 3rem;
-}
-
-/* ----- Header ----- */
-header {
-  background-color: #e83d47;
-  color: #fff;
-  overflow: hidden;
-  background: -webkit-linear-gradient(
-      rgba(232, 61, 71, 0.9),
-      rgba(232, 61, 71, 0.9)
-    ),
-    url("images/petra_pavlisova.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* ----- Top navigation logo ----- */
 .pp-logo {
-  font-family: "Kaushan Script", cursive;
-  font-size: 3rem;
-  color: rgb(255, 255, 255);
+    font-family: "Kaushan Script", cursive;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
 }
 
-/* ----- Top navigation mobile toggler ----- */
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .custom-toggler.navbar-toggler {
-  border-color: #fff;
-  margin: 0;
+    border-color: #fff;
+    margin: 0;
 }
 
-/* ----- Top navigation main menu ----- */
 .nav-link {
-  color: #fff;
-  margin: 5px 10px;
-  text-align: center;
-  text-decoration: none;
+    color: #fff;
+    margin: 5px 10px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .nav-link:hover {
-  color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
 }
 
-/* ----- Intro ----- */
-.koderka {
-  text-decoration: underline;
+header {
+    background-color: #e83d47;
+    color: #fff;
+    overflow: hidden;
+    background: -webkit-linear-gradient(
+            rgba(232, 61, 71, 0.9),
+            rgba(232, 61, 71, 0.9)
+    ),
+    url("images/petra-pavlisova-header.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.intro button {
-  background-color: #e83d4800;
-  border: #fff solid 3px;
-  letter-spacing: 0.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
+h1, h2, h3 {
+    font-family: "Roboto Slab", serif;
 }
 
-.intro button:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+h1 {
+    font-size: 1.5em;
+    line-height: 1.5em;
 }
 
-.intro button a {
-  color: #fff;
-  text-decoration: none;
+h2 {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    font-weight: bold;
+    color: #e83d47;
 }
 
-/* ----- Vo co tady go? aneb moje projekty ----- */
-.projects {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+h3 {
+    font-size: 1.4em;
+    line-height: 1.6em;
+    font-weight: bold;
+}
+
+.projekt-image:hover {
+    transform: scale(1.05);
+}
+
+.intro button,
+.about button {
+    background-color: #e83d4800;
+    border: #fff solid 3px;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transform: scale(0.95);
+}
+
+.intro button:hover,
+.about button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1);
+}
+
+.intro button a,
+.about button a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .link {
-  color: #e83d47;
-  text-decoration: underline;
+    color: #e83d47;
+    text-decoration: underline;
 }
 
 .link:hover {
-  color: #e83d48bb;
+    color: #e83d48bb;
 }
 
-.omne button {
-  border: #e83d47 solid 3px;
-  letter-spacing: 0.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
+.about {
+    background-color: #0a1d35;
+    color: #fff;
+    overflow: hidden;
+    background: -webkit-linear-gradient(
+            rgba(10, 29, 53, 0.85),
+            rgba(10, 29, 53, 0.85)
+    ),
+    url("images/praha-kopule.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
 }
 
-.omne button:hover {
-  background-color: #e83d4820;
-}
-
-.omne button a {
-  color: #e83d47;
-  text-decoration: none;
-}
-
-/* ----- Footer ----- */
 .my-footer {
-  background: #e83d47;
-  font-family: "Roboto Slab", serif;
-  color: rgb(255, 255, 255);
-  text-align: center;
+    background-color: #e83d47;
+    color: #fff;
+    overflow: hidden;
+    background: -webkit-linear-gradient(
+            rgba(232, 61, 71, 0.9),
+            rgba(232, 61, 71, 0.9)
+    ),
+    url("images/petra-pavlisova-footer.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
 }
+
+/*.my-footer {
+    background-color: #e83d47;
+    color: #fff;
+    overflow: hidden;
+    background: -webkit-linear-gradient(
+            rgba(10, 29, 53, 0.9),
+            rgba(10, 29, 53, 0.9)
+    ),
+    url("images/petra_pavlisova_footer.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+}*/
 
 .phone {
-  color: #fff;
+    color: #fff;
 }
 
 .phone:hover {
-  color: #fff;
-  text-decoration: underline;
+    color: #fff;
+    text-decoration: underline;
 }
 
 .btn-linkedin {
-  display: block;
-  margin: auto;
-  background-color: #0966c2;
-  border-color: #0966c2;
-  border-radius: 0.3rem;
-  padding: 8px 20px 4px 18px;
-}
-
-.btn-linkedin a {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
-  text-decoration: none;
+    display: block;
+    margin: auto;
+    background-color: #0966c2;
+    border-color: #0966c2;
+    border-radius: 0.3rem;
+    padding: 8px 20px 4px 18px;
 }
 
 .btn-linkedin:hover {
-  background-color: #0b77e2;
+    background-color: #0b77e2;
+    transform: scale(1.05);
 }
 
-/* ----- TABLET and wider screens ----- */
+.btn-linkedin a {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+
 @media (min-width: 768px) {
-  .nav-link {
-    background: linear-gradient(currentColor, currentColor) bottom / 0 0.3em
-      no-repeat;
-    transition: 1s background-size;
-  }
+    h1 {
+        font-size: 2em;
+    }
 
-  .nav-link:hover {
-    background-size: 75% 0.2em;
-  }
+    h2 {
+        font-size: 1.5em;
+    }
 
-  /* ----- Typography ----- */
-  h1 {
-    font-size: 300%;
-    line-height: 5rem;
-  }
-
-  .intro button {
-    font-size: 110%;
-  }
-
-  .shaker {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .shaker:hover {
-    /* Start the shake animation and make the animation last for 0.5 seconds */
-    animation: shake 0.5s;
-
-    /* When the animation is finished, start again */
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes shake {
-    0% {
-      transform: translate(2px, 1px) rotate(0deg);
+    h3 {
+        font-size: 1.8em;
     }
-    10% {
-      transform: translate(-1px, -2px) rotate(-1deg);
-    }
-    20% {
-      transform: translate(-3px, 0px) rotate(1deg);
-    }
-    30% {
-      transform: translate(0px, 2px) rotate(0deg);
-    }
-    40% {
-      transform: translate(1px, -1px) rotate(1deg);
-    }
-    50% {
-      transform: translate(-1px, 2px) rotate(-1deg);
-    }
-    60% {
-      transform: translate(-3px, 1px) rotate(0deg);
-    }
-    70% {
-      transform: translate(2px, 1px) rotate(-1deg);
-    }
-    80% {
-      transform: translate(-1px, -1px) rotate(1deg);
-    }
-    90% {
-      transform: translate(2px, 2px) rotate(0deg);
-    }
-    100% {
-      transform: translate(1px, -2px) rotate(-1deg);
-    }
-  }
 }
 
-/* ----- PC and wider screens ----- */
+
 @media (min-width: 992px) {
-  body {
-    max-width: 1600px;
-  }
+    h1 {
+        font-size: 2.4em;
+    }
 
-  /* ----- Typography ----- */
-  h1 {
-    font-size: 400%;
-    line-height: 6rem;
-  }
+    h2 {
+        font-size: 1.8em;
+    }
 
-  .intro button {
-    font-size: 130%;
-  }
+    h3 {
+        font-size: 2em;
+    }
 }
+
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+

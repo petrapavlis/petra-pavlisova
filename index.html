@@ -1,331 +1,267 @@
 <!DOCTYPE html>
 <html lang="cs">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<head>
     <title>Petra Pavlisová</title>
-    <meta name="author" content="Petra Pavlisová" />
-    <meta
-      name="description"
-      content="Junior coder - Junior frontend developer - Personal site"
-    />
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Petra Pavlisová - psavec, psanec, pohádkář?">
+    <meta name="keywords" content="Copywriting, content management, Praha">
+    <meta name="author" content="Petra Pavlisová">
     <!-- Bootstrap CSS -->
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
     />
-
     <!-- moje CSS styly -->
-    <link rel="stylesheet" href="style.css" />
-
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="styles.css">
     <!-- Google Font: Roboto, Roboto Slab -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
     />
-
     <!-- Google Font: Kaushan for logo -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+            rel="stylesheet"
     />
-  </head>
+</head>
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-md">
+<body>
+<header>
+    <nav class="navbar navbar-expand-md">
         <!-- Top navigation logo -->
         <a class="navbar-brand" href="index.html">
-          <div class="pp-logo">&lt;pp&gt;</div></a
+            <div class="pp-logo">&lt;pp&gt;</div>
+        </a
         >
         <!-- Top navigation mobile toggler -->
         <button
-          class="navbar-toggler custom-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#mojeNavigace"
-          aria-controls="mojeNavigace"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+                class="navbar-toggler custom-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#mojeNavigace"
+                aria-controls="mojeNavigace"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Top navigation main menu -->
         <div class="collapse navbar-collapse" id="mojeNavigace">
-          <ul class="navbar-nav ml-auto mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html"
-                >Úvod<span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projekty">Projekty</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#omne">O mně</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://www.linkedin.com/in/petra-pavlis/"
-                >LinkedIn</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/petrapavlis"
-                >GitHub</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#kontakt">Kontakt</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav ml-auto mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"
+                    >Úvod<span class="sr-only">(current)</span></a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projekty">Projekty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#omne">O mně</a>
+                </li>
+                <li class="nav-item">
+                    <a
+                            class="nav-link"
+                            href="https://www.linkedin.com/in/petra-pavlis/" target="_blank"
+                    >LinkedIn</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kontakt">Kontakt</a>
+                </li>
+            </ul>
         </div>
-      </nav>
+    </nav>
 
-      <!-- Intro -->
-      <section id="home" class="intro">
-        <div class="container py-5">
-          <h1>
-            Jsem <strong>Petra Pavlisová</strong><br />
-            a chci si najít práci jako
-            <strong>kodér<span class="koderka">(ka)</span></strong>
-          </h1>
-          <button class="btn my-3 py-3 px-4 my-md-4 my-lg-5">
-            <a href="#projekty">Čekni mě</a>
-          </button>
-        </div>
-      </section>
-    </header>
-
-    <main>
-      <section>
-        <div id="projekty" class="container pb-5">
-          <!-- Vo co tady go? aneb moje projekty -->
-          <div class="row pt-5 my-md-5">
-            <div class="col-md-6">
-              <h2>Vo co tady go?</h2>
-              <p>
-                Když jsem měla na rodičovské pocit, že se z dětí dočista
-                zblázním, začala jsem se učit Wordpress. Jednou za mnou přišla
-                kámoška, která zrovna otvírala kosmetický salon, jestli bych jí
-                udělala web. Začala jsem na tom dělat a vznikly wordpressové
-                stránky
-                <a
-                  class="link"
-                  href="https://www.castlecosmetic.cz/"
-                  target="_blank"
-                  >Castle Cosmetic.</a
-                >
-              </p>
-            </div>
-
-            <div class="col-md-6 pt-3 pt-md-0 shaker">
-              <a
-                class="link"
-                href="https://www.castlecosmetic.cz/"
-                target="_blank"
-                ><img
-                  class="img-fluid projects"
-                  src="images/web_castle_cosmetic.png"
-                  alt="Web Castle Cosmetic"
-              /></a>
-            </div>
-          </div>
-
-          <!-- Co bylo dál... -->
-          <div class="row pt-5 my-md-5">
-            <div class="col-md-6">
-              <h2>Co bylo dál...</h2>
-              <p>
-                Pak přišla další kámoška. Ta má pro změnu lyžařskou školu ve
-                Vrchlabí a jejich web už byl tak stařičký a nepodporovaný, že
-                jim přestal fungovat. Udělala jsem další web na Wordpressu,
-                <a
-                  class="link"
-                  href="https://www.snowschool.cz/"
-                  target="_blank"
-                  >Snowschool.</a
-                >
-                Na webu nadále pracuju, edituju, vychytávám mouchy a vylepšuju.
-              </p>
-            </div>
-
-            <div class="col-md-6 pt-3 pt-md-0 order-md-first shaker">
-              <a class="link" href="https://www.snowschool.cz/" target="_blank"
-                ><img
-                  class="img-fluid projects"
-                  src="images/web_snowschool.png"
-                  alt="Web Snowschool.cz"
-              /></a>
-            </div>
-          </div>
-
-          <!-- Čas na osobní projekt -->
-          <div class="row pt-5 my-md-5">
-            <div class="col-md-6">
-              <h2>Čas na osobní projekt</h2>
-              <p>
-                Jsem v pacientském spolku lidí s narkolepsií, a protože je tahle
-                nemoc celkem nepochopená, dala jsem dohromady web
-                <a class="link" href="https://www.usinam.cz/" target="_blank"
-                  >Usínám</a
-                >
-                o narkolepsii. Kovářova kobyla chodí bosa, takže úplně nestíhám
-                pravidelně přispívat, ale díky webu už vznikla poměrně početná
-                komunita lidí, kterým pomohl.
-              </p>
-            </div>
-
-            <div class="col-md-6 pt-3 pt-md-0 shaker">
-              <a class="link" href="https://www.usinam.cz/" target="_blank"
-                ><img
-                  class="img-fluid projects"
-                  src="images/web_usinam.png"
-                  alt="Web Usínám.cz"
-              /></a>
-            </div>
-          </div>
-
-          <!-- Czechitas -->
-          <div class="row pt-5 my-md-5">
-            <div class="col-md-6">
-              <h2>Czechitas</h2>
-              <p>
-                Pak jsem objevila kurzy v Czechitas. Začala jsem úvodem do HTML
-                a CSS a pokračovala tříměsíční Digitální Akademií zaměřenou na
-                front-end webový vývoj. No, nebylo to snadný a JavaScript se
-                snažím pochopit doteď, ale vznikl závěrečný projekt -
-                <a
-                  class="link"
-                  href="https://narkolepsie.usinam.cz/"
-                  target="_blank"
-                  >stránka na sebediagnostiku narkolepsie.</a
-                >
-              </p>
-            </div>
-
-            <div class="col-md-6 pt-3 pt-md-0 order-md-first shaker">
-              <a
-                class="link"
-                href="https://narkolepsie.usinam.cz/"
-                target="_blank"
-                ><img
-                  class="img-fluid projects"
-                  src="images/web_narkolepsie.png"
-                  alt="Web Narkolepsie Usínám"
-              /></a>
-            </div>
-          </div>
-
-          <!-- Tady a teď -->
-          <div class="row pt-5 my-md-5">
-            <div class="col-md-6">
-              <h2>Tady a teď</h2>
-              <p>
-                Momentálně dávám dohromady
-                <a
-                  class="link"
-                  href="https://petrapavlis.github.io/winter-apartment/"
-                  target="_blank"
-                  >stránku apartmánu ve Vrchlabí.</a
-                >
-                Jo, je to zas pro tu kámošku s lyžařskou školou. Web je zatím v
-                poločase rozpadu, ale snažím se to po kouskách posouvat dál.
-                Věci jako koronavirus, karanténa a megazlobící děti mi to trochu
-                kazí.
-              </p>
-            </div>
-
-            <div class="col-md-6 pt-3 pt-md-0 shaker align-middle">
-              <a
-                class="link"
-                href="https://petrapavlis.github.io/winter-apartment/"
-                target="_blank"
-                ><img
-                  class="img-fluid projects"
-                  src="images/web_winter_apartment.png"
-                  alt="Web Winter Apartment"
-              /></a>
-            </div>
-          </div>
-
-          <!-- Kdo jsem -->
-          <div id="omne" class="row pt-5 my-md-5 justify-content-center omne">
-            <div class="col-md-8">
-              <h2>Kdo jsem?</h2>
-              <p>
-                Magor, který nemá problém dělat si ze sebe srandu. Nervák, který
-                jednou dostane infarkt. Unavená matka dvou divokých dětí, bez
-                dávky mateřského talentu. A kdyby to ještě nebylo úplně jasný,
-                <strong>ráda bych si našla práci jako juniorní kodér</strong>
-                a naučila se zase o něco víc, protože mě to dost baví.
-              </p>
-              <button class="btn my-3 py-3 px-4 my-md-4">
-                <a href="index.html">hoď mě nahoru</a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer id="kontakt" class="my-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 pt-5">
-            <p>Dáme kafe a probereme víc?</p>
-          </div>
-          <div class="col-12 pb-2">
-            <a class="phone" href="tel:+420606559022">Volej +420 606 559 022</a>
-          </div>
-          <div class="col-12 pt-1 pb-2">
-            <button class="btn btn-linkedin">
-              <a
-                href="https://www.linkedin.com/in/petra-pavlis/"
-                target="_blank"
-              >
-                <img
-                  class="linkedin mx-2 mb-2"
-                  alt="linkedin"
-                  src="images/linkedin.png"
-                  width="24"
-                  height="24"
-                />Napiš přes LinkedIn</a
-              >
+    <!-- Intro -->
+    <section class="intro">
+        <div class="container my-5 mx-1 mx-md-5">
+            <h1>
+                Jsem <strong>Petra&nbsp;Pavlisová</strong><br/>
+                Píšu <strong>texty</strong> a&nbsp;tvořím <strong>obsah</strong>
+            </h1>
+            <button class="btn my-3 py-3 px-4 my-lg-4 my-lg-5">
+                <a href="#projekty">Pokračujte ↓</a>
             </button>
-          </div>
         </div>
-        <p>Aktualizace říjen 2020</p>
-        <div class="pp-logo pb-5">&lt;pp&gt;</div>
-      </div>
-    </footer>
+    </section>
+</header>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+<main>
+    <div id="projekty" class="row my-5 mx-1 mx-md-5">
+        <div class="col-lg-6">
+            <h2 class="py-3">Jak jsem začala psát weby</h2>
+            <p>Jednou za&nbsp;mnou přišla kamarádka, že by potřebovala webové stránky. Tehdy otvírala nový
+                kosmetický salon. Sedly jsme si na&nbsp;to, daly dohromady koncept a&nbsp;nafotily fotky. Ve&nbsp;Wordpressu
+                jsem naspala web <a class="link" href="https://www.castlecosmetic.cz/" target="_blank">Castle&nbsp;Cosmetic</a>.
+                Stránky úspěšně fungují už několik let a&nbsp;kamarádka je s&nbsp;nimi nadmíru spokojená. Umím
+                prý vystihnout emoce a&nbsp;atmosféru. Mnoho nových
+                klientek zvolilo její salon právě díky mojí webové prezentaci.
+            </p>
+        </div>
+
+        <div class="col-lg-6 py-2 projekt-image">
+            <a class="link" href="https://www.castlecosmetic.cz/" target="_blank"
+            ><img
+                    class="img-fluid projects"
+                    src="images/web-castle-cosmetic.jpg"
+                    alt="Web Castle Cosmetic"
+            /></a>
+        </div>
+    </div>
+
+
+    <div class="row pmy-5 mx-1 mx-md-5 justify-content-center">
+        <div class="col-lg-7">
+            <h2 class="py-3">A co bylo dál...</h2>
+            <p>Přišla další kamarádka. Chtěla web pro&nbsp;jejich rodinnou lyžařskou školu
+                <a class="link" href="https://www.snowschool.cz/" target="_blank">Snowschool</a> ve&nbsp;Vrchlabí.
+                Následovaly stránky s&nbsp;nabídkou řemeslných prací
+                <a class="link" href="http://martinpepr.cz/" target="_blank">Martin&nbsp;Pepř</a> a&nbsp;pak další
+                projekt, tentokrát stránka
+                <a class="link" href="http://pension.martinpepr.cz" target="_blank">Pension&nbsp;Pepper</a> s&nbsp;nabídkou
+                ubytování v&nbsp;apartmánu na&nbsp;Šumavě.
+            </p>
+        </div>
+
+        <div class="col-lg-7 py-2 projekt-image">
+            <a class="link" href="https://www.snowschool.cz/" target="_blank">
+                <img class="img-fluid projects" src="images/web-snowschool.jpg" alt="Web Snowschool"/>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="row my-5 mx-1 mx-md-5">
+        <div class="col-lg-6">
+            <h2 class="py-3">Čas na osobní projekt</h2>
+            <p>Napsala jsem web <a class="link" href="https://www.usinam.cz/" target="_blank">Usínám</a> o&nbsp;narkolepsii.
+                Narkolepsie je poměrně nepochopená nemoc, a&nbsp;tak
+                vznikla potřeba přiblížit ji veřejnosti. Kovářova kobyla chodí bosa a&nbsp;nestíhám
+                pravidelně přispívat, ale díky webu vznikla už poměrně početná komunita lidí, kterým pomohl. Založila
+                jsem
+                také diskusní skupinu na&nbsp;Facebooku pro&nbsp;narkoleptiky a&nbsp;jejich blízké. Umožňuje sdílet
+                zkušenosti s&nbsp;narkolepsií a&nbsp;vzájemně se&nbsp;podpořit.</p>
+        </div>
+
+        <div class="col-lg-6 py-2 projekt-image">
+            <a class="link" href="https://www.usinam.cz/" target="_blank">
+                <img class="img-fluid projects" src="images/web-usinam.jpg" alt="Web Usinam"/>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="row my-5 mx-1 mx-md-5">
+        <div class="col-lg-6">
+            <h2 class="py-3">Czechitas</h2>
+            <p>A&nbsp;pak jsem objevila kurzy v&nbsp;Czechitas a&nbsp;začala úvodem do&nbsp;HTML
+                a&nbsp;CSS. Pokračovala jsem tříměsíčním kurzem Digitální Akademie Web zaměřeným na&nbsp;front&#8209;end
+                webový vývoj a&nbsp;dalším intenzivním kurzem
+                UX&nbsp;designu. Díky expanzi onemocnění covid&#8209;19 probíhalo vše poprvé čistě on-line. Během
+                dvoudenního hackathonu vznikl závěrečný projekt,
+                <a class="link" href="https://narkolepsie.usinam.cz/" target="_blank">stránka na&nbsp;sebediagnostiku
+                    narkolepsie</a>.
+        </div>
+
+        <div class="col-lg-6 py-2 projekt-image order-lg-first">
+            <a class="link" href="https://narkolepsie.usinam.cz/" target="_blank">
+                <img class="img-fluid projects" src="images/web-narkolepsie.jpg" alt="Web Narkolepsie"/>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="row my-5 mx-1 mx-md-5 justify-content-center">
+        <div class="col-lg-7">
+            <h2 class="py-3">Poslední rok - tady a&nbsp;teď</h2>
+            <p>Po&nbsp;Czechitas jsem našla práci jako juniorní kreativní kodérka v&nbsp;mezinárodní mediální
+                agenturě. Mám na&nbsp;starosti třeba správu obsahu webu <a class="link"
+                                                                           href="https://www.skoda-auto.cz/"
+                                                                           target="_blank">Škoda&nbsp;Auto</a>, ale
+                primárně
+                kódování webových projektů pro&nbsp;různé klienty.
+            </p>
+            <p>Uvědomila jsem si, že při&nbsp;práci na&nbsp;webu mě nejvíc baví psaní textů a&nbsp;tvorba obsahu.
+                <strong>Rozhodla jsem se hledat novou příležitost jako copywriter nebo content editor</strong>. Podaří se to třeba u&nbsp;vás?
+            </p>
+        </div>
+
+        <div class="col-lg-7 pt-2 pb-4 projekt-image">
+            <a class="link" href="https://www.skoda-auto.cz/" target="_blank">
+                <img class="img-fluid projects" src="images/web-skoda-auto.jpg" alt="Web Skoda Auto"/>
+            </a>
+        </div>
+    </div>
+
+
+    <div id="omne" class="row py-5 px-md-5 about justify-content-center">
+        <div class="col-lg-7 px-5 mx-md-5">
+            <h3 class="py-3">Žijící, tvořící v&nbsp;ruchu a&nbsp;smogu překrásné Prahy</h3>
+            <p>
+                Kdo jsem? Trochu blázen se&nbsp;smyslem pro&nbsp;humor, který nemá problém udělat si&nbsp;srandu třeba i&nbsp;sama
+                ze&nbsp;sebe. Trochu nervák, který možná jednou dostane infarkt. Matka dvou divokých dětí s&nbsp;minimální
+                dávkou mateřského talentu. Ale&nbsp;taky idealista, snílek a&nbsp;věčný přemítač o&nbsp;smyslu života. A&nbsp;hlavně
+                moc sympatická a&nbsp;kreativní baba, která má ráda lidi a&nbsp;text.
+            </p>
+            <button class="btn mt-3 mb-5 py-3 px-4 my-lg-4">
+                <a href="index.html">Nahoru ↑</a>
+            </button>
+        </div>
+    </div>
+</main>
+
+<footer id="kontakt" class="my-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 pt-5">
+                <p>Dáme si kávu a probereme víc?</p>
+            </div>
+            <div class="col-12 pb-2">
+                <a class="phone" href="tel:+420606559022">Volejte +420 606 559 022</a>
+            </div>
+            <div class="col-12 pt-1 pb-2">
+                <button class="btn btn-linkedin">
+                    <a
+                            href="https://www.linkedin.com/in/petra-pavlis/"
+                            target="_blank"
+                    >
+                        <img
+                                class="linkedin mx-2 mb-2"
+                                alt="linkedin"
+                                src="images/linkedin.png"
+                                width="24"
+                                height="24"
+                        />Napište přes LinkedIn</a
+                    >
+                </button>
+            </div>
+        </div>
+        <p>Aktualizace říjen 2021</p>
+        <div class="pp-logo pb-5">&lt;pp&gt;</div>
+    </div>
+</footer>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"
+></script>
+</body>
 </html>
