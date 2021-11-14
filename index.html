@@ -8,15 +8,9 @@
     <meta name="keywords" content="Copywriting, content management, Praha">
     <meta name="author" content="Petra Pavlisová">
     <!-- Bootstrap CSS -->
-    <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-            crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- moje CSS styly -->
     <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="styles.css">
     <!-- Google Font: Roboto, Roboto Slab -->
     <link
             href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap"
@@ -31,52 +25,44 @@
 
 <body>
 <header>
-    <nav class="navbar navbar-expand-md">
-        <!-- Top navigation logo -->
-        <a class="navbar-brand" href="index.html">
-            <div class="pp-logo">&lt;pp&gt;</div>
-        </a
-        >
-        <!-- Top navigation mobile toggler -->
-        <button
-                class="navbar-toggler custom-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#mojeNavigace"
-                aria-controls="mojeNavigace"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <div class="pp-logo">&lt;pp&gt;</div>
+            </a>
+        
+        <div class="d-flex">
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Úvod</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projekty">Projekty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#omne">O mně</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cv">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontakt">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/petra-pavlis/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                          </svg></a>
+                    </li>
+                </ul>
+            </div>
 
-        <!-- Top navigation main menu -->
-        <div class="collapse navbar-collapse" id="mojeNavigace">
-            <ul class="navbar-nav ml-auto mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html"
-                    >Úvod<span class="sr-only">(current)</span></a
-                    >
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projekty">Projekty</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#omne">O mně</a>
-                </li>
-                <li class="nav-item">
-                    <a
-                            class="nav-link"
-                            href="https://www.linkedin.com/in/petra-pavlis/" target="_blank"
-                    >LinkedIn</a
-                    >
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#kontakt">Kontakt</a>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- Intro -->
     <section class="intro">
@@ -86,182 +72,277 @@
                 Píšu <strong>texty</strong> a&nbsp;tvořím <strong>obsah</strong>
             </h1>
             <button class="btn my-3 py-3 px-4 my-lg-4 my-lg-5">
-                <a href="#projekty">Pokračujte ↓</a>
+                <a href="#projekty">Projekty ↓</a>
             </button>
         </div>
     </section>
 </header>
 
 <main>
-    <div id="projekty" class="row my-5 mx-1 mx-md-5">
-        <div class="col-lg-6">
-            <h2 class="py-3">Jak jsem začala psát weby</h2>
-            <p>Jednou za&nbsp;mnou přišla kamarádka, že by potřebovala webové stránky. Tehdy otvírala nový
-                kosmetický salon. Sedly jsme si na&nbsp;to, daly dohromady koncept a&nbsp;nafotily fotky. Ve&nbsp;Wordpressu
-                jsem naspala web <a class="link" href="https://www.castlecosmetic.cz/" target="_blank">Castle&nbsp;Cosmetic</a>.
-                Stránky úspěšně fungují už několik let a&nbsp;kamarádka je s&nbsp;nimi nadmíru spokojená. Umím
-                prý vystihnout emoce a&nbsp;atmosféru. Mnoho nových
-                klientek zvolilo její salon právě díky mojí webové prezentaci.
+    <section>
+        <div class="container py-5">
+            <h2>Jak jsem začala psát weby</h2>
+
+    <div class="row py-4">
+        <div class="col-lg-7">
+            <p>Jednou za&nbsp;mnou přišla kamarádka se&nbsp;slovy: "Potřebuju webové stránky." Tehdy otvírala nový
+                kosmetický salon. Daly jsme dohromady koncept, nafotily fotky a&nbsp;ve&nbsp;Wordpressu
+                jsem napsala web <a class="link" href="https://www.castlecosmetic.cz/" target="_blank">Castle&nbsp;Cosmetic</a>.
+                Po&nbsp;čase došlo na přepsání webu ve&nbsp;frameworku Bootstrap, ale vizuální podoba zůstala stejná. 
+                Stránky úspěšně fungují už několik let a&nbsp;mnoho nových klientek zvolilo salon právě díky mé&nbsp;webové prezentaci. 
+                Umím prý vystihnout emoce a&nbsp;atmosféru.
             </p>
         </div>
 
-        <div class="col-lg-6 py-2 projekt-image">
+        <div class="col-lg-5">
             <a class="link" href="https://www.castlecosmetic.cz/" target="_blank"
             ><img
-                    class="img-fluid projects"
+                    class="img-fluid project-image"
                     src="images/web-castle-cosmetic.jpg"
                     alt="Web Castle Cosmetic"
             /></a>
         </div>
     </div>
 
-
-    <div class="row pmy-5 mx-1 mx-md-5 justify-content-center">
+    <div class="row py-5">
         <div class="col-lg-7">
-            <h2 class="py-3">A co bylo dál...</h2>
-            <p>Přišla další kamarádka. Chtěla web pro&nbsp;jejich rodinnou lyžařskou školu
+            <p>Pak přišla další kamarádka. Chtěla web pro&nbsp;jejich rodinnou lyžařskou školu
                 <a class="link" href="https://www.snowschool.cz/" target="_blank">Snowschool</a> ve&nbsp;Vrchlabí.
                 Následovaly stránky s&nbsp;nabídkou řemeslných prací
-                <a class="link" href="http://martinpepr.cz/" target="_blank">Martin&nbsp;Pepř</a> a&nbsp;pak další
-                projekt, tentokrát stránka
-                <a class="link" href="http://pension.martinpepr.cz" target="_blank">Pension&nbsp;Pepper</a> s&nbsp;nabídkou
-                ubytování v&nbsp;apartmánu na&nbsp;Šumavě.
+                <a class="link" href="http://martinpepr.cz/" target="_blank">Martin&nbsp;Pepř</a>,
+                nabídka ubytování v&nbsp;apartmánu na&nbsp;Šumavě <a class="link" href="http://pension.martinpepr.cz" target="_blank">Pension&nbsp;Pepper</a> a&nbsp;několik dalších menších projektů.
+                Chtěla jsem se dál rozvíjet a&nbsp;začala číst hodně zdrojů o&nbsp;webovém vývoji a&nbsp;copywritingu. 
+                Dost jsem čerpala z&nbsp;knihy Jana Řezáče Web ostrý jako břitva nebo blogů Otty Bohuše a&nbsp;Pavla Šenkapouna, ale i&nbsp;mnohých dalších.
             </p>
         </div>
 
-        <div class="col-lg-7 py-2 projekt-image">
+        <div class="col-lg-5 order-lg-first">
             <a class="link" href="https://www.snowschool.cz/" target="_blank">
-                <img class="img-fluid projects" src="images/web-snowschool.jpg" alt="Web Snowschool"/>
+                <img class="img-fluid project-image" src="images/web-snowschool.jpg" alt="Web Snowschool"/>
             </a>
         </div>
     </div>
 
-
-    <div class="row my-5 mx-1 mx-md-5">
-        <div class="col-lg-6">
-            <h2 class="py-3">Čas na osobní projekt</h2>
-            <p>Napsala jsem web <a class="link" href="https://www.usinam.cz/" target="_blank">Usínám</a> o&nbsp;narkolepsii.
-                Narkolepsie je poměrně nepochopená nemoc, a&nbsp;tak
-                vznikla potřeba přiblížit ji veřejnosti. Kovářova kobyla chodí bosa, a&nbsp;tak nestíhám
-                pravidelně přispívat, ale díky webu vznikla už poměrně početná komunita lidí, kterým pomohl. Založila
-                jsem
-                také diskusní skupinu na&nbsp;Facebooku pro&nbsp;narkoleptiky a&nbsp;jejich blízké. Umožňuje sdílet
-                zkušenosti s&nbsp;narkolepsií a&nbsp;vzájemně se&nbsp;podpořit.</p>
-        </div>
-
-        <div class="col-lg-6 py-2 projekt-image">
-            <a class="link" href="https://www.usinam.cz/" target="_blank">
-                <img class="img-fluid projects" src="images/web-usinam.jpg" alt="Web Usinam"/>
-            </a>
-        </div>
-    </div>
-
-
-    <div class="row my-5 mx-1 mx-md-5">
-        <div class="col-lg-6">
-            <h2 class="py-3">Czechitas</h2>
-            <p>A&nbsp;pak jsem objevila kurzy v&nbsp;Czechitas a&nbsp;začala úvodem do&nbsp;HTML
-                a&nbsp;CSS. Pokračovala jsem tříměsíčním kurzem Digitální Akademie Web zaměřeným na&nbsp;front&#8209;end
-                webový vývoj a&nbsp;dalším intenzivním kurzem
-                UX&nbsp;designu. Díky expanzi onemocnění covid&#8209;19 probíhalo vše poprvé čistě on-line. Během
-                dvoudenního hackathonu vznikl závěrečný projekt,
-                <a class="link" href="https://narkolepsie.usinam.cz/" target="_blank">stránka na&nbsp;sebediagnostiku
-                    narkolepsie</a>.
-        </div>
-
-        <div class="col-lg-6 py-2 projekt-image order-lg-first">
-            <a class="link" href="https://narkolepsie.usinam.cz/" target="_blank">
-                <img class="img-fluid projects" src="images/web-narkolepsie.jpg" alt="Web Narkolepsie"/>
-            </a>
-        </div>
-    </div>
-
-
-    <div class="row my-5 mx-1 mx-md-5 justify-content-center">
-        <div class="col-lg-7">
-            <h2 class="py-3">Poslední rok - tady a&nbsp;teď</h2>
-            <p>Po&nbsp;Czechitas jsem našla práci jako juniorní kreativní kodérka v&nbsp;mezinárodní mediální
-                agenturě. Mám na&nbsp;starosti třeba správu obsahu webu <a class="link"
-                                                                           href="https://www.skoda-auto.cz/"
-                                                                           target="_blank">Škoda&nbsp;Auto</a>, ale
-                také
-                kódování webových projektů pro&nbsp;různé klienty.
-            </p>
-            <p>Uvědomila jsem si, že při&nbsp;práci na&nbsp;webu mě nejvíc baví psaní textů a&nbsp;tvorba obsahu.
-                <strong>Rozhodla jsem se hledat novou příležitost jako copywriter nebo content editor</strong>. Podaří se to třeba u&nbsp;vás?
+    <div class="row pt-3 justify-content-center">
+        <div class="col-lg-8">
+            <h2 class="next">A co bylo dál...</h2>
+            <p>Objevila jsem kurzy <a class="link" href="https://www.czechitas.cz/" target="_blank">Czechitas</a> a&nbsp;začala úvodem do&nbsp;HTML a&nbsp;CSS. 
+                Pokračovala jsem tříměsíčním kurzem Digitální Akademie Web zaměřeným na&nbsp;front&#8209;end webový vývoj a&nbsp;dalším intenzivním kurzem UX&nbsp;designu. 
+                Zanedlouho se mi podařilo nastoupit do&nbsp;reklamní agentury <a class="link" href="https://www.isobar.com/en-cz" target="_blank">Isobar</a> jako juniorní kreativní kodérka a&nbsp;editorka obsahu. 
+                Měla jsem možnost pracovat na&nbsp;mnoha rozmanitých projektech a&nbsp;postupně jsem si uvědomila, že&nbsp;nejraději mám právě psaní textů a&nbsp;tvorbu obsahu.
             </p>
         </div>
+</div>
+</section>
 
-        <div class="col-lg-7 pt-2 pb-4 projekt-image">
-            <a class="link" href="https://www.skoda-auto.cz/" target="_blank">
-                <img class="img-fluid projects" src="images/web-skoda-auto.jpg" alt="Web Skoda Auto"/>
-            </a>
+<!-- Projekty -->
+<section id="projekty">
+    <div class="container pb-5">
+        <h2>Webové projekty</h2>
+
+        <div class="row py-4">
+            <div class="col-lg-6">
+                <a class="link" href="https://www.skoda-auto.cz/" target="_blank"
+                ><img 
+                        class="img-fluid project-image" 
+                        src="images/web-skoda-auto.jpg" 
+                        alt="Web Skoda Auto"
+                /></a>
+                <h4 class="pt-4">Škoda Auto</h4>
+                <p>Web Škoda&nbsp;Auto byl zatím můj nejrozsáhlejší projekt. Měla jsem na starosti správu webového obsahu v&nbsp;redakčním systému a&nbsp;jeho pravidelnou aktualizaci v&nbsp;průběhu celého roku&nbsp;2021.</p>                
+                <a class="link link-modal" data-bs-toggle="modal" data-bs-target="#skodaModal">Číst dál</a>
+            </div>
+    
+            <div class="col-lg-6 second-project">
+                <a class="link" href="https://www.skoda-dealernetwork.com" target="_blank"
+                ><img
+                        class="img-fluid project-image"
+                        src="images/web-skoda-dealer-network.png"
+                        alt="Web Skoda Dealernetwork"
+                /></a>
+                <h4 class="pt-4">Škoda Dealer Network</h4>
+                <p>Na&nbsp;projektu jsem pracovala v&nbsp;průběhu cca&nbsp;6&nbsp;měsíců. Začala jsem přípravou a&nbsp;nahráváním obsahu webu do&nbsp;redakčního systému za&nbsp;použití dostupných obsahových modulů.</p>
+                <a class="link link-modal" data-bs-toggle="modal" data-bs-target="#skodadnModal">Číst dál</a>
+            </div>
         </div>
-    </div>
 
-
-    <div id="omne" class="row py-5 px-md-5 about justify-content-center">
-        <div class="col-lg-7 px-5 mx-md-5">
-            <h3 class="py-3">Žijící, tvořící v&nbsp;ruchu a&nbsp;smogu překrásné Prahy</h3>
-            <p>
-                Kdo jsem? Psavec, psanec nebo pohádkář? Trochu blázen se&nbsp;smyslem pro&nbsp;humor, který nemá problém udělat si&nbsp;srandu třeba i&nbsp;sama
-                ze&nbsp;sebe. Trochu nervák, který možná jednou dostane infarkt. Matka dvou divokých dětí s&nbsp;minimální
-                dávkou mateřského talentu. Ale&nbsp;taky idealista, snílek a&nbsp;věčný přemítač o&nbsp;smyslu života. A&nbsp;hlavně
-                moc sympatická a&nbsp;kreativní osoba, která má ráda lidi a&nbsp;text.
-            </p>
-            <button class="btn mt-3 mb-5 py-3 px-4 my-lg-4">
-                <a href="#kontakt">Kontaktujte mě ↓</a>
-            </button>
+        <div class="row py-4">
+            <div class="col-lg-6">
+                <a class="link" href="https://www.rostemeschuti.cz/" target="_blank"
+                ><img
+                        class="img-fluid project-image"
+                        src="images/web-sunar-rosteme-s-chuti.png"
+                        alt="Web Sunar"
+                /></a>
+                <h4 class="pt-4">Sunar - Rosteme s chutí</h4>
+                <p>Řešila jsem jednodušší úpravy v kódu a především plnění webu obsahem v českém a slovenském jazyce - web je ve dvou jazykových verzích. Dělala jsem také uživatelské testování.</p>
+                <a class="link" href="https://www.rostemeschuti.cz/" target="_blank"
+                >Přejít na&nbsp;Rosteme s chutí</a>    
+            </div>
+    
+            <div class="col-lg-6 second-project">
+                <a class="link" href="https://www.rotarix.cz/" target="_blank"
+                ><img
+                        class="img-fluid project-image"
+                        src="images/web-rotarix.png"
+                        alt="Web Rotarix"
+                /></a>
+                <h4 class="pt-4">GSK - Rotarix</h4>
+                <p>Prováděla jsem rozsáhlé uživatelské testování napříč všemi prohlížeči a zařízeními, spolupracovala na opravě chyb, prováděla jednoduché úpravy a aktualizace textů.</p>
+                <a class="link" href="https://www.rotarix.cz/" target="_blank"
+                >Přejít na&nbsp;Rotarix</a> 
+            </div>
         </div>
+
+        <div class="row py-4">
+            <div class="col-lg-6">
+                <a class="link" href="https://tavi.today/" target="_blank"
+                ><img
+                        class="img-fluid project-image"
+                        src="images/web-edwards.png"
+                        alt="Web Edwards"
+                /></a>
+                <h4 class="pt-4">Edwards</h4>
+                <p>Na základě požadavků klienta jsem prováděla editaci obsahu a úpravy funkcionalit webu ve Wordpressu. Vše bylo potřeba provést ve čtyřech jazykových mutacích.</p>
+                <a class="link" href="https://tavi.today/" target="_blank"
+                >Přejít na&nbsp;Edwards</a> 
+            </div>
+
+            <div class="col-lg-6 second-project">
+                <a class="link" href="https://www.korejskaenergie.cz/" target="_blank"
+                ><img
+                        class="img-fluid project-image"
+                        src="images/web-korejska-energie.png"
+                        alt="Web Korejska energie"
+                /></a>
+                <h4 class="pt-4">Korejská energie</h4>
+                <p>Aktualizovala jsem kód existujícího webu a prováděla úpravy podle nového designu. V zásadě se jednola o změnu barev, textů, výměnu fotek a videa.</p>
+                <a class="link" href="https://www.korejskaenergie.cz/" target="_blank"
+                >Přejít na&nbsp;Korejská energie</a> 
+            </div>
+        </div>
+
+        <div class="row py-4">
+            <div class="col-lg-6">
+                <a class="link" href="https://www.soutez.krusovice.cz/" target="_blank"
+                ><img
+                        class="img-fluid project-image"
+                        src="images/web-soutez-krusovice.png"
+                        alt="Web Krusovice"
+                /></a>
+                <h4 class="pt-4">Soutěž Krušovice</h4>
+                <p>Testovala jsem soutěžní web před jeho spuštěním. Kontrolovala jsem zobrazení ve všech prohlížečích a zařízeních, ale také funkcionality webu, formulářů a vkládání soutěžních kódů.</p>
+                <a class="link" href="https://www.soutez.krusovice.cz/" target="_blank"
+                >Přejít na&nbsp;Krušovice</a> 
+            </div>
+
+            <div class="col-lg-6 second-project">
+                <a class="link" href="https://www.soutez.starobrno.cz/" target="_blank"
+                ><img
+                        class="img-fluid project-image"
+                        src="images/web-soutez-starobrno.png"
+                        alt="Web Starobrno"
+                    /></a>
+                    <h4 class="pt-4">Soutěž Starobrno</h4>
+                    <p>Testovala jsem soutěžní web před jeho spuštěním. Kontrolovala jsem zobrazení ve všech prohlížečích a zařízeních, ale také funkcionality webu, formulářů a vkládání soutěžních kódů.</p>
+                    <a class="link" href="https://www.soutez.starobrno.cz/" target="_blank"
+                    >Přejít na&nbsp;Starobrno</a> 
+                </div>
+        </div>    
+
+        <div class="row py-4">
+            <div class="col-lg-6">
+                <a class="link" href="https://batstore.cz/" target="_blank"
+                ><img
+                        class="img-fluid project-image"
+                        src="images/web-batstore.png"
+                        alt="Web Batstore"
+                /></a>
+                <h4 class="pt-4">Batstore</h4>
+                <p>Můj první, velmi rozsáhlý a náročný projekt v Isobar, který spočíval v každodenním testování a reportování chyb, popřípadě návrhu oprav. Souběžně jsme řešili weby 
+                    <a class="link" href="https://www.velo.com/cz/cs/" target="_blank"
+                    >Velo&nbsp;CZ</a> a&nbsp;<a class="link" href="https://www.velo.com/sk/sk/" target="_blank"
+                    >Velo&nbsp;SK</a>.</p>
+                <a class="link" href="https://batstore.cz/" target="_blank"
+                >Přejít na&nbsp;Batstore</a> 
+            </div>
+        </div>               
     </div>
+    </section>
+
+    <!-- O mnně -->
+    <section id="omne">
+        <div class="row py-5 px-md-5 about justify-content-center">
+            <div class="col-lg-8 px-5 mx-md-5">
+                <h3 class="py-3">Žijící, tvořící v&nbsp;Praze</h3>
+                <p>
+                    Kdo jsem? Psavec, psanec nebo pohádkář? Trochu svéráz s&nbsp;bujnou fantazií, který vidí svět v&nbsp;komiksech a&nbsp;slyší v&nbsp;textech zhudebněných písní. Idealistka, snílek a&nbsp;věčný přemítač o&nbsp;otázkách typu "Proč tu jsme a kam jdeme." Trochu blázen se&nbsp;smyslem pro&nbsp;humor, který nemá problém udělat si&nbsp;srandu třeba i&nbsp;sama
+                    ze&nbsp;sebe. Občas lehký nervák. Člověk mnoha zájmů s&nbsp;nadšením poznat cokoliv nového a momentálně i&nbsp;studentka magisterského oboru Mediální studia na&nbsp;Fakultě sociálních věd Univerzity Karlovy. A&nbsp;hlavně
+                    moc sympatická a&nbsp;kreativní baba, která má ráda lidi a&nbsp;nemůže vám chybět v&nbsp;týmu.
+                </p>
+                <button class="btn mt-3 mb-5 py-3 px-4 my-lg-4">
+                    <a href="index.html">Nahoru ↑</a>
+                </button>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer id="kontakt" class="my-footer">
     <div class="container">
         <div class="row">
             <div class="col-12 pt-5">
-                <p>Dáme si kávu a probereme víc?</p>
-            </div>
-            <div class="col-12 pb-2">
-                <a class="phone" href="tel:+420606559022">Volejte +420 606 559 022</a>
-            </div>
-            <div class="col-12 pt-1 pb-2">
-                <button class="btn btn-linkedin">
-                    <a
-                            href="https://www.linkedin.com/in/petra-pavlis/"
-                            target="_blank"
-                    >
-                        <img
-                                class="linkedin mx-2 mb-2"
-                                alt="linkedin"
-                                src="images/linkedin.png"
-                                width="24"
-                                height="24"
-                        />Napište přes LinkedIn</a
-                    >
-                </button>
+                <p class="contact-me">Volejte <a class="phone" href="tel:+420606559022">+420 606 559 022</a> nebo&nbsp;pište&nbsp;na <a class="email" href="mailto:petra.pavlis@gmail.com">petra.pavlis@gmail.com</a></p>
+                <p class="disclaimer px-3">Prohlašuji, že všechny uvedené informace jsou pravdivé. Stránku jsem vytvořila sama a&nbsp;slouží jako moje osobní prezentace. Aktualizace listopad&nbsp;2021.</p>
+                <div class="pp-logo pb-5">&lt;pp&gt;</div>
             </div>
         </div>
-        <p>Aktualizace říjen 2021</p>
-        <div class="pp-logo pb-5">&lt;pp&gt;</div>
     </div>
+</div>
 </footer>
 
+<!-- Modal -->
+<div class="modal fade" id="skodaModal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="modal-title">Škoda Auto</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <p>Web Škoda&nbsp;Auto byl zatím můj nejrozsáhlejší projekt. Měla jsem na starosti správu webového obsahu v&nbsp;redakčním systému a&nbsp;jeho pravidelnou aktualizaci v&nbsp;průběhu celého roku&nbsp;2021. 
+                    Zásadní byl přechod na&nbsp;novou verzi webu začátkem roku, což znamenalo masivní obsahové úpravy napříč celým webem.</p>
+                <p>Díky celkové změně designu jsem řešila dva zásadní problémy. Nové webové rozhraní požadovalo jiné rozměry obrázků oproti staré verzi webu, ale také došlo na&nbsp;výrazné omezení znaků v&nbsp;nadpisech a&nbsp;textech. 
+                    Na&nbsp;mě tedy bylo upravit všechny fotky na&nbsp;nově požadované velikosti a&nbsp;zároveň provést kontrolu a&nbsp;editaci všech textů, které byly nad&nbsp;rámec povoleného limitu. 
+                    V &nbsp;tomto případě jsem zároveň plnila funkci copywritera a&nbsp;leccos kompletně přetextovala.</p>
+                <p>Během jednoho měsíce jsem navíc musela zvládnout opravit obsah více&nbsp;než 200&nbsp;webů dealerů Škoda&nbsp;Auto, které díky nedopatření na&nbsp;straně klienta, spojeného s&nbsp;přechodem na&nbsp;nový web, ze&nbsp;dne na&nbsp;den přestaly fungovat.</p>
+                <a class="link" href="https://www.skoda-auto.cz/" target="_blank"
+                >Přejít na&nbsp;Škoda&nbsp;Auto</a>        
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="skodadnModal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="modal-title">Škoda Dealer Network</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Na&nbsp;projektu jsem pracovala v&nbsp;průběhu cca&nbsp;6&nbsp;měsíců. Začala jsem přípravou a&nbsp;nahráváním obsahu webu do&nbsp;redakčního systému za&nbsp;použití dostupných obsahových modulů. 
+                Skládáním modulů jsem tvořila jednotlivé články, ty&nbsp;řadila do&nbsp;kategorií a&nbsp;navazovala k&nbsp;relevantním stránkám.</p>
+            <p>Během přípravy obsahu jsem postrádala vyhovující moduly, takže jsem provedla vlastní analýzu potřeb a&nbsp;připravila návrh nových modulů, které šly následně k&nbsp;řádnému nadyzajnování a&nbsp;poté nakódování. 
+                Nové moduly přispěly k&nbsp;efektivnější práci s&nbsp;textem a&nbsp;fotkami, ale také k&nbsp;celkově dynamičtějšímu a&nbsp;nejednotvárnému vizuálu.</p>
+            <p>V poslední fázi projektu jsem se podílela na editaci samotného kódu jednotlivých stránek webu a jejich komponent postavených na frameworku Vue.js</p>
+            <a class="link" href="https://www.skoda-dealernetwork.com" target="_blank">Přejít na&nbsp;Škoda&nbsp;Dealer Network</a>   
+        </div>
+      </div>
+    </div>
+
+
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script
-        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"
-></script>
-<script
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"
-></script>
-<script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"
-></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

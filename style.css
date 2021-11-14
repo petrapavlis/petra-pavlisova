@@ -3,250 +3,253 @@ color-blue: #0a1d35
 color-red: #e83d47
 */
 
-body, html {
-    display: block;
-    height: 100%;
-    width: 100%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
+body,
+html {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    color: #212121;
-    font-size: 1.2rem;
-    line-height: 2.3rem;
-    display: block;
-    margin: auto;
-    max-width: 1600px;
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  font-size: 1.2rem;
+  line-height: 2.3rem;
+  display: block;
+  margin: auto;
+  max-width: 1600px;
 }
 
 .pp-logo {
-    font-family: "Kaushan Script", cursive;
-    font-size: 3rem;
-    color: rgb(255, 255, 255);
+  font-family: "Kaushan Script", cursive;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
 }
 
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .custom-toggler.navbar-toggler {
-    border-color: #fff;
-    margin: 0;
+  border-color: #fff;
+  margin: 0;
 }
 
 .nav-link {
-    color: #fff;
-    margin: 10px;
-    padding: 3px;    
-    text-align: center;
-    text-decoration: none;
+  color: #fff;
+  margin: 10px;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .nav-link:hover {
-    color: rgb(255, 255, 255);
-    transform: scale(1.1);
+  color: rgba(255, 255, 255, 0.75);
+  transform: scale(1.1);
 }
 
 header {
-    background-color: #e83d47;
-    color: #fff;
-    overflow: hidden;
-    background: -webkit-linear-gradient(
-            rgba(232, 61, 71, 0.9),
-            rgba(232, 61, 71, 0.9)
+  background-color: #e83d47;
+  color: #fff;
+  overflow: hidden;
+  background: -webkit-linear-gradient(
+      rgba(232, 61, 71, 0.9),
+      rgba(232, 61, 71, 0.9)
     ),
     url("images/petra-pavlisova-header.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-h1, h2, h3 {
-    font-family: "Roboto Slab", serif;
+h1,
+h2,
+h3,
+h5 {
+  font-family: "Roboto Slab", serif;
 }
 
 h1 {
-    font-size: 1.5em;
-    line-height: 1.5em;
+  font-size: 1.5em;
+  line-height: 1.5em;
 }
 
 h2 {
-    font-size: 1.2em;
-    line-height: 1.8em;
-    font-weight: bold;
-    color: #e83d47;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  font-weight: bold;
+  color: #e83d47;
 }
 
 h3 {
-    font-size: 1.4em;
-    line-height: 1.6em;
-    font-weight: bold;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  font-weight: bold;
 }
 
-.projekt-image:hover {
-    transform: scale(1.05);
+h4 {
+  font-weight: bold;
+  color: #e83d47;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+.next {
+  padding-bottom: 20px;
+}
+
+.project-image {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.project-image:hover {
+  opacity: 0.5;
 }
 
 .intro button,
 .about button {
-    background-color: #e83d4800;
-    border: #fff solid 3px;
-    letter-spacing: 0.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    transform: scale(1);
-	animation: pulse 2s infinite;
+  background-color: #e83d4800;
+  border: #fff solid 3px;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+.link-modal {
+  cursor: pointer;
 }
 
 @keyframes pulse {
-	0% {
-		transform: scale(0.95);
-	}
+  0% {
+    transform: scale(0.95);
+  }
 
-	70% {
-		transform: scale(1);
-	}
+  70% {
+    transform: scale(1);
+  }
 
-	100% {
-		transform: scale(0.95);
-	}
+  100% {
+    transform: scale(0.95);
+  }
 }
 
 .intro button:hover,
 .about button:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .intro button a,
 .about button a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .link {
-    color: #e83d47;
-    text-decoration: underline;
+  color: #e83d47;
+  text-decoration: underline;
 }
 
 .link:hover {
-    color: #e83d48bb;
+  color: #e83d48bb;
 }
 
 .about {
-    background-color: #0a1d35;
-    color: #fff;
-    overflow: hidden;
-    background: -webkit-linear-gradient(
-            rgba(10, 29, 53, 0.85),
-            rgba(10, 29, 53, 0.85)
+  background-color: #0a1d35;
+  color: #fff;
+  overflow: hidden;
+  background: -webkit-linear-gradient(
+      rgba(10, 29, 53, 0.85),
+      rgba(10, 29, 53, 0.85)
     ),
     url("images/praha-kopule.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
 }
 
 .my-footer {
-    background-color: #e83d47;
-    color: #fff;
-    overflow: hidden;
-    background: -webkit-linear-gradient(
-            rgba(232, 61, 71, 0.9),
-            rgba(232, 61, 71, 0.9)
+  background-color: #e83d47;
+  color: #fff;
+  overflow: hidden;
+  background: -webkit-linear-gradient(
+      rgba(232, 61, 71, 0.9),
+      rgba(232, 61, 71, 0.9)
     ),
     url("images/petra-pavlisova-footer.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Roboto Slab", serif;
-    text-align: center;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
 }
 
-/*.my-footer {
-    background-color: #e83d47;
-    color: #fff;
-    overflow: hidden;
-    background: -webkit-linear-gradient(
-            rgba(10, 29, 53, 0.9),
-            rgba(10, 29, 53, 0.9)
-    ),
-    url("images/petra_pavlisova_footer.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Roboto Slab", serif;
-    text-align: center;
-}*/
-
-.phone {
-    color: #fff;
+.contact-me {
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
-.phone:hover {
-    color: #fff;
-    text-decoration: underline;
+.phone,
+.email {
+  color: #fff;
+  margin-bottom: 0;
 }
 
-.btn-linkedin {
-    display: block;
-    margin: auto;
-    background-color: #0966c2;
-    border-color: #0966c2;
-    border-radius: 0.3rem;
-    padding: 8px 20px 4px 18px;
+.phone:hover,
+.email:hover {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: underline;
 }
 
-.btn-linkedin:hover {
-    background-color: #0b77e2;
-    transform: scale(1.05);
+.disclaimer {
+  font-size: smaller;
+  line-height: 1.6em;
 }
-
-.btn-linkedin a {
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.2rem;
-    text-decoration: none;
-}
-
 
 @media (min-width: 768px) {
-    h1 {
-        font-size: 2em;
-    }
+  h1 {
+    font-size: 2em;
+  }
 
-    h2 {
-        font-size: 1.5em;
-    }
+  h2 {
+    font-size: 1.5em;
+  }
 
-    h3 {
-        font-size: 1.8em;
-    }
+  h3 {
+    font-size: 1.8em;
+  }
 }
-
 
 @media (min-width: 992px) {
-    h1 {
-        font-size: 2.4em;
-    }
+  h1 {
+    font-size: 2.4em;
+  }
 
-    h2 {
-        font-size: 1.8em;
-    }
+  h2 {
+    font-size: 1.8em;
+  }
 
-    h3 {
-        font-size: 2em;
-    }
+  h3 {
+    font-size: 2em;
+  }
 }
 
+@media (max-width: 992px) {
+  .second-project {
+    margin-top: 50px;
+  }
+}
 
 @media (min-width: 1200px) {
-    h1 {
-        font-size: 3em;
-    }
+  h1 {
+    font-size: 3em;
+  }
 }
-
